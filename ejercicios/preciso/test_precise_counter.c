@@ -4,6 +4,10 @@
 #include <sys/time.h>
 #include "counter.h"
 
+
+/* structs */
+// code here (if you required it)...
+
 /* start_routine header */
 // code here...
 

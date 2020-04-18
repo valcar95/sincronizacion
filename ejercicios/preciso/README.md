@@ -35,6 +35,9 @@ A continuación (para su comodidad) se muestra el esqueleto del código a comple
 #include <sys/time.h>
 #include "counter.h"
 
+/* structs */
+// code here (if you required it)...
+
 /* start_routine header */
 // code here...
 
