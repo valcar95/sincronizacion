@@ -1,4 +1,4 @@
-# Manejo de estructuras que usan loops #
+# Manejo de estructuras que usan locks #
 
 ## Fuentes de consulta ##
 1. Material de clase (Videos y diapostivas).
