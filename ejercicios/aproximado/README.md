@@ -1,6 +1,4 @@
-# Contrador aprocimado #
-
-# Contrador preciso #
+# Contrador aproximado #
 
 ## Archivos disponibles ##
 

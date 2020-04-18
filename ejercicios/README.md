@@ -20,7 +20,7 @@
    * ¿Cuántas CPU hay disponibles en el sistema que está utilizando?  
    * ¿Este número afecta de alguna manera sus mediciones?
 
-5. Mejore el archivo [test_aproximate_mejorado_counter.c](./aproximado_mejorado/test_aproximate_counter.c) de tal modo que ademas de permitir modificar el numero de hilos y el valor maximo del contador a emplear, permita modificar tambien el umbral o factor de apromación (S), para esto se puede basar en el ejercicio 3. De este modo los parametros serán:
+5. Mejore el archivo [test_aproximate_mejorado_counter.c](./aproximado_mejorado/test_aproximate_mejorado_counter.c) (el cual se encuentra en el directorio [./aproximado_mejorado](./aproximado_mejorado)) de tal modo que ademas de permitir modificar el numero de hilos y el valor maximo del contador a emplear, permita modificar tambien el umbral o factor de apromación (S), para esto se puede basar en el ejercicio 3. De este modo los parametros serán:
    * Umbral: ```APPROXIMATION_FACTOR```
    * Valor maximo del contador: ```MAXCNT```
    * Numero de hilos que seran lanzados: ```NUMTHREADS```
