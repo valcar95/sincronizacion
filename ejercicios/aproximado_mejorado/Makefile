@@ -1,7 +1,7 @@
 # specify all source files here
-SRCS = counter.c test_precise_counter.c
+SRCS = counter.c test_aproximate_mejorado_counter.c
 # specify target here (name of executable)
-TARG = test_precise_counter.out
+TARG = test_aproximate_mejorado_counter.out
 # specify compiler, compile flags, and needed libs
 CC = gcc
 OPTS = -Wall -O -g
