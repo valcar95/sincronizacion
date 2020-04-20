@@ -6,7 +6,7 @@ Se recomienda que lea, entienda y codifique el código de las listas enlazadas c
 
 ## Aplicación - biblioteca ##
 
-La empresa **ACME** en la cual usted labora ha ganado una licitación para el desarrollo de un software para la gestion de materiabl bibliografico en una biblioteca. 
+La empresa **ACME**, en la cual usted labora, ha ganado una licitación para el desarrollo de un software para la gestión de material bibliográfico en una biblioteca. 
 
 ![biblioteca](biblioteca.jpg)
 
@@ -18,9 +18,11 @@ La información que se va a almacenar por cada libro será:
 3. **num_pages**: Número de páginas del libro.
 4. **pub_year**: Año de publicación.
 
-Para la prueba se llevaron a cabo las siguientes etapas:
+Se le ha encomendado a usted que desarrolle un programa que **simule** el funcionamiento concurrente de los préstamos de 
+la biblioteca. Para la prueba se deben llevar a cabo las siguientes etapas:
+
 1. **Inicialización de la lista con la información de los libros**: Para las pruebas se crea una lista de 10000 libros en la cual los campos **num_pages** y **pub_year** serán los mismos (por ejemplo 100 y "2020"); sin embargo, **id** (entre "0" y "9999") y el **name** (desde "book_0" hasta "book_999") van a variar. 
-2. **Simulación de los prestamos**: Para el prestamo se van a simular 4 oficinas de atención. Cada una de las cuales podrá acceder a la lista de libros creada en la etapa 1; sin embargo, solo se van a manejar 1000 préstamos por oficina. Para tal fin, cada vez que se vaya a simular un préstamo se genera un número aleatorio para el **id** del libro (para lo cual se recomienda que use la función ```rand_r``` y no olvide inicializar la semilla aleatoria cada estación de préstamo). Si el **id** generado está disponible dentro de la lista de libros, se procede a realizar el préstamo y se actualiza la lista, si no el libro no se encuentra dentro de la lista, significa que el ejemplar ya fue prestado. En todo caso, la oficina deberá llevar un registro de cuántos préstamos fueron exitosos y cuántos fallaron (para propósitos de test) y mostrarlo en pantalla al finalizar su ejecución.
+2. **Simulación de los prestamos**: Para el préstamo se van a simular 4 oficinas de atención. Cada una de las cuales podrá acceder a la lista de libros creada en la etapa 1; sin embargo, solo se van a manejar 1000 préstamos por oficina. Para tal fin, cada vez que se vaya a simular un préstamo se genera un número aleatorio para el **id** del libro (para lo cual se recomienda que usar el generador de números aleatorios de C y no olvide inicializar la semilla aleatoria cada estación de préstamo). Si el **id** generado está disponible dentro de la lista de libros, se procede a realizar el préstamo y se actualiza la lista, si no el libro no se encuentra dentro de la lista, significa que el ejemplar ya fue prestado. En todo caso, la oficina deberá llevar un registro de cuántos préstamos fueron exitosos y cuántos fallaron (para propósitos de test) y mostrarlo en pantalla al finalizar su ejecución.
 3. **Despligue de resultados**: Finalmente, el programa deberá desplegar, el número total de préstamos realizados con éxito, el número total de préstamos que fallaron y el número de libros disponibles.
 4. **Medición del tiempo de ejecución de la aplicación**: Un vez ya se encuentre todo lo anterior listo proceda a medir el tiempo llevado a cabo para los préstamos.
 
@@ -41,6 +43,10 @@ Total successful loans 3302, total failed loans 698
 Number of remaining available books 6698
 ```
 
+**Recomendaciones importantes:**
+- Desarrolle un hilo por que simule el funcionamiento de cada oficina de atención.
+- No olvide verificar que la funciones de la librería estándar que utiliza en cada función hilo sean *Thread Safe*.
+- Tenga en cuenta que en la implementación pueden ocurrir varias condiciones de carrera (*race conditions*), implemente los mecanimos de sincronización adecuados para garantizar que la simulación siempre se ejecute de manera correta.
 
  
 
