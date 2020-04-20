@@ -2,29 +2,29 @@
 
 ## Antes de empezar ## 
 
-Se recomienda que lea, entienda y codifique el codigo de las listas enlazadas concurrentes (sección [Lock-based Concurrent Data Structures](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks-usage.pdf) del texto guia). Luego, lea el problema y a partir de lo que se solicita empieze a modificar el codigo ejemplo del libro.
+Se recomienda que lea, entienda y codifique el código de las listas enlazadas concurrentes (sección [Lock-based Concurrent Data Structures](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks-usage.pdf) del texto guía). Luego, lea el problema y, a partir de lo que se solicita, empiece a modificar el código ejemplo del libro.
 
-## Aplicacion - biblioteca ##
+## Aplicación - biblioteca ##
 
 La empresa **ACME** en la cual usted labora ha ganado una licitación para el desarrollo de un software para la gestion de materiabl bibliografico en una biblioteca. 
 
 ![biblioteca](biblioteca.jpg)
 
-En el momento se encuentran haciendo las pruebas de la funcionalidad de prestamo de libros. La idea es permitir que hayan 4 puestos de atención de prestamo de material que funcionen de manera simultanea sin que los datos de información del inventario se corrompan. 
+En el momento se encuentran haciendo las pruebas de la funcionalidad de préstamo de libros. La idea es permitir que hayan 4 puestos de atención de préstamo de material que funcionen de manera simultánea sin que los datos de información del inventario se corrompan. 
 
-La información que se  va a almacenar por cada libro será:
+La información que se va a almacenar por cada libro será:
 1. **id**: Identificador del libro.
 2. **name**: Nombre del libro.
-3. **num_pages**: Numero de paginas del libro.
+3. **num_pages**: Número de páginas del libro.
 4. **pub_year**: Año de publicación.
 
 Para la prueba se llevaron a cabo las siguientes etapas:
 1. **Inicialización de la lista con la información de los libros**: Para las pruebas se crea una lista de 10000 libros en la cual los campos **num_pages** y **pub_year** serán los mismos (por ejemplo 100 y "2020"); sin embargo, **id** (entre "0" y "9999") y el **name** (desde "book_0" hasta "book_999") van a variar. 
-2. **Simulación de los prestamos**: Para el prestamo se van a simular 4 prestamos de atención. Cada uno de los cuales podra acceder a la lista de libros del creada en la etapa 1; sin embargo, solo se van a manejar 1000 prestamos por oficina de presamos. Para tal fin; cada vez que se vaya a simular un prestamo se deberá generar un número aleatorio para el **id** (para lo cual se recomienda que use ```rand_r``` (ademas no olvide inicializar la semilla aleatoria cada estación de prestamo). Si el **id** generado esta disponible dentro de la lista de libros se procede a realizar el prestamo y se actualiza esta, si no se encuentra dentro de la lista, significa que el ejemplar ya fue prestado. En todo caso, la oficina deberá llevar un registro de cuantos cuantos prestamos fueron exitosos y cuantos fallaron (para propositos de test) y mostrarlo en pantalla.
-3. **Desplique de resultados**: Finalmente, el programa debera desplegar, el numero total de prestamos realizados con exito, el numero total de prestamos que fallaron y el numero de libros disponibles.
-4. **Medición del tiempo de ejecución de la aplicacion**: Un vez ya se encuentre todo lo anterior listo proceda a medir el tiempo llevado a cabo para los prestamos.
+2. **Simulación de los prestamos**: Para el prestamo se van a simular 4 oficinas de atención. Cada una de las cuales podrá acceder a la lista de libros creada en la etapa 1; sin embargo, solo se van a manejar 1000 préstamos por oficina. Para tal fin, cada vez que se vaya a simular un préstamo se genera un número aleatorio para el **id** del libro (para lo cual se recomienda que use la función ```rand_r``` y no olvide inicializar la semilla aleatoria cada estación de préstamo). Si el **id** generado está disponible dentro de la lista de libros, se procede a realizar el préstamo y se actualiza la lista, si no el libro no se encuentra dentro de la lista, significa que el ejemplar ya fue prestado. En todo caso, la oficina deberá llevar un registro de cuántos préstamos fueron exitosos y cuántos fallaron (para propósitos de test) y mostrarlo en pantalla al finalizar su ejecución.
+3. **Despligue de resultados**: Finalmente, el programa deberá desplegar, el número total de préstamos realizados con éxito, el número total de préstamos que fallaron y el número de libros disponibles.
+4. **Medición del tiempo de ejecución de la aplicación**: Un vez ya se encuentre todo lo anterior listo proceda a medir el tiempo llevado a cabo para los préstamos.
 
-Un posible ejemplo de una salida en la cual se muestra una aplicación se muestra a continuación:
+A continucación se muestra un posible ejemplo de una salida en la cual se tiene la ejecución de una simulación:
 
 ```
 Initializing list of available books
