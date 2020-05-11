@@ -10,7 +10,9 @@
    * ¿Cómo se utiliza esta función (muestre un ejemplo)? 
    <br><b>Ver archivo <a href="https://github.com/valcar95/sincronizacion/blob/master/aplicacion/punto1/p1.c">p1.c<a/></b><br>
    * ¿Cuál es el intervalo de tiempo más corto que se puede medir con esta función?
+   <br><b>Segun la ejecución del punto anterior el tiempo mínimo es de 0.001 milisegundos</b><br>
 2. Consulte cuantas CPUs hay disponibles en el sistema que usted está utilizando. (Pista use el comando lscpu)
+<br><img src="../aplicacion/punto1/cpus.JPG"/><br>
 2. Desarrolle un programa que utilice un contador concurrente simple. Mida cuánto tiempo lleva incrementar el contador muchas veces a medida que aumenta el número de hilos (1, 2, 4, 8 y 16). Para tal fin, siga las instrucciones que aparecen en el directorio [preciso](./preciso). Una vez complete los pasos continue con el tercer punto.
 3. Desarrolle una versión del contador aproximado (*sloppy counter*) y mida su desempeño a medida que se varía el número de hilos. En este caso, solo maneje un umbral de S = 1024 variando el número de hilos (1, 2, 4, 8 y 16). Las intrucciones para ello se encuentran en el directorio [aproximado](./aproximado).
 4. Grafique los resultados obtenidos de las pruebas recopiladas (en las tablas) para el **número de hilos .vs. el tiempo (en segundos)**, estas siguen la tendencia de la figura **29.5** del libro (la cual se muestra a continuación):
