@@ -32,7 +32,7 @@
 <tr>
 <td>2</td>
 <td>1998848</td>
-<td>35.474</td>
+<td>35.474ms</td>
 </tr>
 <tr>
 <td>4</td>
@@ -55,7 +55,7 @@
 3. Desarrolle una versión del contador aproximado (*sloppy counter*) y mida su desempeño a medida que se varía el número de hilos. En este caso, solo maneje un umbral de S = 1024 variando el número de hilos (1, 2, 4, 8 y 16). Las intrucciones para ello se encuentran en el directorio [aproximado](./aproximado).
 4. Grafique los resultados obtenidos de las pruebas recopiladas (en las tablas) para el **número de hilos .vs. el tiempo (en segundos)**, estas siguen la tendencia de la figura **29.5** del libro (la cual se muestra a continuación):
 
-![fig_performance](fig_performance.jpg)
+![fig_performance](fig_performance.jpg) <img src="../aplicacion/punto1/chart.png"/>
 
    * ¿Los valores que usted obtuvo siguen una tendencia como la que se muestra en el texto guía (mostrada anteriormente)?
    * ¿Cuántas CPUs hay disponibles en el sistema que usted está utilizando?  
