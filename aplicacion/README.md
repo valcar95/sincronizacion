@@ -26,7 +26,9 @@ la biblioteca. Para la prueba se deben llevar a cabo las siguientes etapas:
 3. **Despligue de resultados**: Finalmente, el programa deberá desplegar, el número total de préstamos realizados con éxito, el número total de préstamos que fallaron y el número de libros disponibles.
 4. **Medición del tiempo de ejecución de la aplicación**: Un vez ya se encuentre todo lo anterior listo proceda a medir el tiempo llevado a cabo para los préstamos.
 
-A continucación se muestra un posible ejemplo de una salida en la cual se tiene la ejecución de una simulación:
+<br>
+<b>Resultado</b>
+<br>
 
 <img src="./punto2/resultado.JPG"/>
 
