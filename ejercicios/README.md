@@ -58,9 +58,9 @@
 
 ![fig_performance](fig_performance.jpg) <img src="../aplicacion/punto1/chart.png"/>
 
-   * ¿Los valores que usted obtuvo siguen una tendencia como la que se muestra en el texto guía (mostrada anteriormente)?
-   * ¿Cuántas CPUs hay disponibles en el sistema que usted está utilizando?  
-   * ¿Este número afecta de alguna manera sus mediciones?
+   * ¿Los valores que usted obtuvo siguen una tendencia como la que se muestra en el texto guía (mostrada anteriormente)?: <b>Si, como se puede ver en el gáfico adjunto, entre más húmero de hilos mayor es el tiempo</b>
+   * ¿Cuántas CPUs hay disponibles en el sistema que usted está utilizando?: <b>8 CPUs</b>  
+   * ¿Este número afecta de alguna manera sus mediciones?: <b>No, ya que al intentar con valores diferentes el comportamiento es el mismo</b>
 
 5. Mejore el archivo [test_aproximate_mejorado_counter.c](./aproximado_mejorado/test_aproximate_mejorado_counter.c) (el cual se encuentra en el directorio [aproximado_mejorado](./aproximado_mejorado)) de tal modo que, además de permitir modificar el numero de hilos y el valor máximo del contador a emplear, permita modificar también el umbral o factor de apromación (S), para esto se puede basar en el ejercicio 3. De este modo los parametros serán:
    * Umbral: ```APPROXIMATION_FACTOR```
