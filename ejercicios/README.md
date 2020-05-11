@@ -139,7 +139,7 @@ Luego, ejecute varias veces la aplicación dejando constante el valor máximo de
 </table>
 </td>
 <td>
-<img src="../aplicacion/punto1/chart2.png"/>
+<img src="../aplicacion/punto1/chart22.png"/>
 </td>
 </tr>
 </table>
