@@ -14,6 +14,44 @@
 2. Consulte cuantas CPUs hay disponibles en el sistema que usted está utilizando. (Pista use el comando lscpu)
 <br><img src="../aplicacion/punto1/cpus.JPG"/><br>
 2. Desarrolle un programa que utilice un contador concurrente simple. Mida cuánto tiempo lleva incrementar el contador muchas veces a medida que aumenta el número de hilos (1, 2, 4, 8 y 16). Para tal fin, siga las instrucciones que aparecen en el directorio [preciso](./preciso). Una vez complete los pasos continue con el tercer punto.
+<br>
+<table>
+<thead>
+<tr>
+<td># de hilos</td>
+<td>Valor logrado</td>
+<td>Duración</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>999424</td>
+<td>19.083ms</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1998848</td>
+<td>35.474</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3997696</td>
+<td>72.793ms</td>
+</tr>
+<tr>
+<td>8</td>
+<td>7999488</td>
+<td>139.119ms</td>
+</tr>
+<tr>
+<td>16</td>
+<td>10997760</td>
+<td>195.919ms</td>
+</tr>
+</tbody>
+</table>
+<br>
 3. Desarrolle una versión del contador aproximado (*sloppy counter*) y mida su desempeño a medida que se varía el número de hilos. En este caso, solo maneje un umbral de S = 1024 variando el número de hilos (1, 2, 4, 8 y 16). Las intrucciones para ello se encuentran en el directorio [aproximado](./aproximado).
 4. Grafique los resultados obtenidos de las pruebas recopiladas (en las tablas) para el **número de hilos .vs. el tiempo (en segundos)**, estas siguen la tendencia de la figura **29.5** del libro (la cual se muestra a continuación):
 
