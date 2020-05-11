@@ -18,9 +18,9 @@
 <table>
 <thead>
 <tr>
-<td># de hilos</td>
-<td>Valor logrado</td>
-<td>Duración</td>
+<th># de hilos</th>
+<th>Valor logrado</th>
+<th>Duración</th>
 </tr>
 </thead>
 <tbody>
