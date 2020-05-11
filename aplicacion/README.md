@@ -28,20 +28,7 @@ la biblioteca. Para la prueba se deben llevar a cabo las siguientes etapas:
 
 A continucación se muestra un posible ejemplo de una salida en la cual se tiene la ejecución de una simulación:
 
-```
-Initializing list of available books
-my id 0, my seed 2058611624 
-my id 1, my seed 1662376139 
-my id 2, my seed 235467922 
-my id 3, my seed 788003183 
-Office 2 has finished its workload, successful loans 866, failed loans 134
-Office 0 has finished its workload, successful loans 790, failed loans 210
-Office 3 has finished its workload, successful loans 887, failed loans 113
-Office 1 has finished its workload, successful loans 759, failed loans 241
-Simulation done! execution time: 341.08 ms
-Total successful loans 3302, total failed loans 698
-Number of remaining available books 6698
-```
+<img src="./punto2/resultado.JPG"/>
 
 **Recomendaciones importantes:**
 - Desarrolle un hilo por que simule el funcionamiento de cada oficina de atención.
