@@ -132,3 +132,4 @@ Luego, ejecute varias veces la aplicación dejando constante el valor máximo de
 </tr>
 </tbody>
 </table>
+<img src="../aplicacion/punto1/chart2.png"/>
