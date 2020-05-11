@@ -77,6 +77,11 @@ Luego, ejecute varias veces la aplicación dejando constante el valor máximo de
 
 ![fig_S](fig_S.jpg)
 
+
+<table>
+<tr>
+<td>
+
 <table>
 <thead>
 <tr>
@@ -132,4 +137,11 @@ Luego, ejecute varias veces la aplicación dejando constante el valor máximo de
 </tr>
 </tbody>
 </table>
+</td>
+<td>
 <img src="../aplicacion/punto1/chart2.png"/>
+</td>
+</tr>
+</table>
+
+
